@@ -1,0 +1,48 @@
+﻿@using System.Web.Optimization
+@using Diploma
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @Scripts.Render("~/bundles/jquery")
+    @Styles.Render("~/bundles/less/main")
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <table id="@Constants.UiElements.Id.Header" class="table-ui">
+        <tbody>
+            <tr>
+                <td>
+                    @{
+                        Html.RenderPartial("Header");
+                    }
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table id="@Constants.UiElements.Id.MainContent" class="table-ui">
+        <tbody>
+            <tr>
+                <td>
+                    <div id="@Constants.UiElements.Id.Content">
+                        @RenderBody()
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table id="@Constants.UiElements.Id.Footer" class="table-ui">
+        <tbody>
+            <tr>
+                <td>
+                    @{
+                        Html.RenderPartial("Footer");
+                    }
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
