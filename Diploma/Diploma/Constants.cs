@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace Diploma
+﻿namespace Diploma
 {
     public static class Constants
     {
@@ -17,6 +12,10 @@ namespace Diploma
                 public const string Footer = "footer";
                 public const string MainContent = "main-content";
             }
+        }
+        public static class Resources
+        {
+            public const string Shared = "~/App_Data/Resources/Text/Shared.xml";
         }
     }
 }
