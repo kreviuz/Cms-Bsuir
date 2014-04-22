@@ -7,8 +7,7 @@ namespace Diploma.Controllers
     {
         public ActionResult Index()
         {
-            var model = DtoHelper.ToTextItemModel();
-            return View(model);
+            return View();
         }
     }
 }

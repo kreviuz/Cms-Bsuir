@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Root>
   <Item data-guid="09EDDFBB-A886-4B9C-9744-973457B504C7">
+    <![CDATA[
     Text for test.
-  </Item>
-  <Item data-guid="15C7C601-36CC-4398-BB34-EF16299DE7AE">
-    Text for test.
+    ]]>
   </Item>
 </Root>

@@ -10,9 +10,9 @@ namespace Diploma.DataHelpers
 {
     public static partial class DtoHelper
     {
-        public static IEnumerable<TextItemModel> ToTextItemModel()
+        public static IEnumerable<TextItemModel> ToTextItemModel(string path)
         {
-            using (var xmlSteam = new FileStream(HttpContext.Current.Server.MapPath(Constants.Resources.Shared), FileMode.Open))
+            using (var xmlSteam = new FileStream(HttpContext.Current.Server.MapPath(path), FileMode.Open))
             {
                 var serializer = new XmlSerializer(typeof(Root));
                 var dto = (Root)serializer.Deserialize(xmlSteam);

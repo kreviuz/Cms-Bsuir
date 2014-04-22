@@ -1,6 +1,27 @@
-﻿@using Diploma.HtmlHelpers
-@{
+﻿<script src="@Url.Content("~/Scripts/redactor/redactor.js")"></script>
+<script src="@Url.Content("~/Scripts/modules/editor_module.js")"></script>
+    @using Diploma    @using Diploma.HtmlHelpers
+@using Newtonsoft.Json
+    @{
     Layout = "~/Views/Shared/_BaseLayout.cshtml";
 }
 
-<span>@Html.RenderTextWithGuid("09EDDFBB-A886-4B9C-9744-973457B504C7")</span>
+@{
+    var settings = new
+    {
+        Selectors = new
+        {
+            Editor = String.Format(Constants.UiElements.IdSelector, Constants.UiElements.Id.Editor),
+            ButtonRedact = String.Format(Constants.UiElements.IdSelector, Constants.UiElements.Id.ButtonRedact)
+        }
+    };
+    var jsParams = JsonConvert.SerializeObject(settings);
+}
+<div id="@Constants.UiElements.Id.Editor">@Html.RenderText()</div>
+<button id="@Constants.UiElements.Id.ButtonRedact">Редактировать</button>
+<script type="text/javascript">
+    $(function () {
+        var jsParams = @Html.Raw(jsParams);
+        window.root.editorModule.init(jsParams);
+    })
+</script>
