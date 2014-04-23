@@ -1,27 +1,26 @@
 ﻿<script src="@Url.Content("~/Scripts/redactor/redactor.js")"></script>
 <script src="@Url.Content("~/Scripts/modules/editor_module.js")"></script>
-    @using Diploma    @using Diploma.HtmlHelpers
-@using Newtonsoft.Json
-    @{
-    Layout = "~/Views/Shared/_BaseLayout.cshtml";
+@using Diploma
+@using Diploma.HtmlHelpers
+@{
+	Layout = "~/Views/Shared/_BaseLayout.cshtml";
 }
 
 @{
-    var settings = new
-    {
-        Selectors = new
-        {
-            Editor = String.Format(Constants.UiElements.IdSelector, Constants.UiElements.Id.Editor),
-            ButtonRedact = String.Format(Constants.UiElements.IdSelector, Constants.UiElements.Id.ButtonRedact)
-        }
-    };
-    var jsParams = JsonConvert.SerializeObject(settings);
+	var settings = new
+	{
+		Selectors = new
+		{
+			Editor = String.Format(Constants.UiElements.IdSelector, Constants.UiElements.Id.Editor),
+			ButtonRedact = String.Format(Constants.UiElements.IdSelector, Constants.UiElements.Id.ButtonRedact)
+		},
+		UrlPostData = Url.Action("UrlPostData"),
+		Path = ((RazorView)Html.ViewContext.View).ViewPath.Replace(Constants.Resources.ViewsPathPart, Constants.Resources.ResourcesPathPart)
+		.Replace(Constants.Resources.CshtmlPathPart, Constants.Resources.XmlPathPart)
+	};
 }
 <div id="@Constants.UiElements.Id.Editor">@Html.RenderText()</div>
 <button id="@Constants.UiElements.Id.ButtonRedact">Редактировать</button>
-<script type="text/javascript">
-    $(function () {
-        var jsParams = @Html.Raw(jsParams);
-        window.root.editorModule.init(jsParams);
-    })
-</script>
+<button id="save" type="submit">Сохранить</button>
+
+@Html.InitModule("window.root.EditorModule", settings)

@@ -21,6 +21,19 @@ namespace Diploma.DataHelpers
             }
         }
 
+		public static void SerealizeModel(IEnumerable<TextItemModel> model, string path)
+		{
+			var serverPath = HttpContext.Current.Server.MapPath(path);
+			Root dto;
+			using (var xmlSteam = new FileStream(serverPath, FileMode.Open))
+			{
+				var serializer = new XmlSerializer(typeof(Root));
+				dto = (Root)serializer.Deserialize(xmlSteam);
+			}
+			dto.Item.First().Value = model.First().Text;
+			dto.SaveToFile(serverPath);
+		}
+
         public static TextItemModel GetTextItemModel(RootItem dtoItem)
         {
             var item = new TextItemModel

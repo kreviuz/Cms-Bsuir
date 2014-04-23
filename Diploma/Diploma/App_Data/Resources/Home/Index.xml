@@ -1,8 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Root>
-  <Item data-guid="09EDDFBB-A886-4B9C-9744-973457B504C7">
-    <![CDATA[
-    Text for test.
-    ]]>
-  </Item>
+<?xml version="1.0"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Item data-guid="09EDDFBB-A886-4B9C-9744-973457B504C7">&lt;p&gt;&lt;b&gt;Text for testваыа.&lt;/b&gt;&lt;/p&gt;</Item>
 </Root>
