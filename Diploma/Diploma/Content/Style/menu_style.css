@@ -29,11 +29,11 @@
     }
 
 .img-menu-question {
-    background-image: url('/Content/Media/Images/theory_gray.jpg');
+    background-image: url('/Content/Media/Images/question_gray.jpg');
 }
 
     .img-menu-question:hover {
-        background-image: url('/Content/Media/Images/theory.jpg');
+        background-image: url('/Content/Media/Images/question.jpg');
     }
 
 .table-menu-index {
