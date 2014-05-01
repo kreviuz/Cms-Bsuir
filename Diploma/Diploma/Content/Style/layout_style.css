@@ -1,0 +1,214 @@
+﻿h1 {
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFAFA;
+    font-size: 200%;
+    margin-left: 0px;
+    font-weight: bold;
+}
+
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: Black;
+    font-size: 200%;
+}
+
+h2 {
+    text-align: left;
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-size: 170%;
+    font-weight: bold;
+}
+
+var {
+    text-align: center;
+    text-transform: none;
+    font-family: Tahoma, Verdana, sans-serif;
+    color: #FFFAFA;
+    font-size: 80%;
+    margin-top: 0;
+    font-style: normal;
+}
+
+code {
+    text-align: justify;
+    font-family: sans-serif;
+    color: #339999;
+    font-size: 90%;
+    font-style: normal;
+    padding-left: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    width: 100%;
+    letter-spacing: 0px;
+}
+
+em {
+    font-family: Verdana, sans-serif;
+    font-style: normal;
+    color: #5A5A5A;
+    font: 85%;
+}
+
+input {
+    border: 2px solid Black;
+    font-size: 120%;
+    font-style: normal;
+    font-weight: bold;
+    font-family: Verdana;
+    text-align: center;
+}
+
+
+td.spec2 {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 1px;
+}
+
+.black {
+    margin-left: 10px;
+    color: Black;
+}
+
+.margined {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+.bigmargin {
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: #5A5A5A;
+    font-size: 90%;
+}
+
+.bigmargin2 {
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: #5A5A5A;
+    font-size: 85%;
+}
+
+.unmargined {
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 0px;
+}
+
+.copyright {
+    font-size: xx-small;
+    font-family: Tahoma, Arial, sans-serif;
+    text-align: right;
+}
+
+.smallheader {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.dot {
+    color: Black;
+    text-decoration: underline;
+}
+
+.small {
+    font-size: 2px;
+}
+
+td {
+    font-family: Verdana, sans-serif;
+    font-style: normal;
+    font-size: 90%;
+}
+
+li {
+    font-size: 100%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+body {
+    color: Black;
+    background-color: #FFFBFB;
+    font-size: 80%;
+    letter-spacing: 0.10em;
+    text-align: justify;
+    font-family: Tahoma, Verdana, sans-serif;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+p {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+}
+
+a {
+    color: #6495ED;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #115ADB;
+        text-decoration: underline;
+    }
+
+.col-3 {
+    width: 25%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.header-left {
+    text-align: center;
+    width: 13%;
+}
+
+.header-top {
+    width: 70%;
+    text-align: center;
+}
+
+.header-right {
+    width: 13%;
+}
+
+.header {
+    background-image: url('../Media/Images/background.jpg');
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    height: 25px;
+    border-color: #316AC5;
+    background-image: url('../Media/Images/background.jpg');
+    text-align: center;
+}
+
+.footer-logo {
+    color: #ffffff;
+    font-style: italic;
+    font-weight: bold;
+}

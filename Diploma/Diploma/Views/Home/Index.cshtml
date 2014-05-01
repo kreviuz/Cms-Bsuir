@@ -1,26 +1,50 @@
-﻿<script src="@Url.Content("~/Scripts/redactor/redactor.js")"></script>
-<script src="@Url.Content("~/Scripts/modules/editor_module.js")"></script>
-@using Diploma
-@using Diploma.HtmlHelpers
-@{
-	Layout = "~/Views/Shared/_BaseLayout.cshtml";
+﻿@{
+    Layout = "~/Views/Shared/_BaseLayout.cshtml";
 }
 
-@{
-	var settings = new
-	{
-		Selectors = new
-		{
-			Editor = String.Format(Constants.UiElements.IdSelector, Constants.UiElements.Id.Editor),
-			ButtonRedact = String.Format(Constants.UiElements.IdSelector, Constants.UiElements.Id.ButtonRedact)
-		},
-		UrlPostData = Url.Action("UrlPostData"),
-		Path = ((RazorView)Html.ViewContext.View).ViewPath.Replace(Constants.Resources.ViewsPathPart, Constants.Resources.ResourcesPathPart)
-		.Replace(Constants.Resources.CshtmlPathPart, Constants.Resources.XmlPathPart)
-	};
-}
-<div id="@Constants.UiElements.Id.Editor">@Html.RenderText()</div>
-<button id="@Constants.UiElements.Id.ButtonRedact">Редактировать</button>
-<button id="save" type="submit">Сохранить</button>
 
-@Html.InitModule("window.root.EditorModule", settings)
+<table class="table-menu-index">
+    <tbody>
+        <tr>
+            <td>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="text-center col-3">
+                                <a href="#" class="text-italic text-bold">
+                                    <span class="img-menu img-menu-program"></span>
+                                    <div>Программа дисциплины</div>
+                                </a>
+                            </td>
+                            <td class="text-center col-3">
+                                <a href="#" class="text-italic text-bold">
+                                    <span class="img-menu img-menu-theory"></span>
+                                    <div>Теория по курсу</div>
+                                </a>
+                            </td>
+                            <td class="text-center col-3">
+                                <a href="#" class="text-italic text-bold">
+                                    <span class="img-menu img-menu-practice"></span>
+                                    <div>Практика</div>
+                                </a>
+                            </td>
+                            <td class="text-center col-3">
+                                <a href="#" class="text-italic text-bold">
+                                    <span class="img-menu img-menu-question"></span>
+                                    <div>Контроль знаний</div>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-italic">Рабочая программа дисциплины</td>
+                            <td class="text-italic">Материалы для теоретического изучения дисциплины</td>
+                            <td class="text-italic">Материалы для практических занятий, лабораторного практикума по дисциплине</td>
+                            <td class="text-italic">Дополнительные средства для проверки усвоения материала, контроля полученных знаний</td>
+                        </tr>
+                        <tr></tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>

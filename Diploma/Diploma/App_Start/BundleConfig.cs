@@ -18,7 +18,8 @@ namespace Diploma.App_Start
         private static void RegisterStyles(BundleCollection bundles)
         {
             var layoutBundle = new StyleBundle("~/bundles/css/main").Include(
-                       "~/Content/layout_style.css",
+                       "~/Content/Style/layout_style.css",
+                        "~/Content/Style/menu_style.css",
                        "~/Content/redactor/redactor.css");
             bundles.Add(layoutBundle);
         }

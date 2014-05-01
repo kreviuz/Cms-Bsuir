@@ -12,13 +12,15 @@ namespace Diploma.HtmlHelpers
             path = path.Replace(Constants.Resources.ViewsPathPart, Constants.Resources.ResourcesPathPart);
             return path.Replace(Constants.Resources.CshtmlPathPart, Constants.Resources.XmlPathPart);
         }
+
         public static MvcHtmlString RenderTextWithGuid(this HtmlHelper helper, string guid)
         {
             var path = GetPathToResource(helper.ViewContext);
             var items = DtoHelper.ToTextItemModel(path);
-            var mvcString = new MvcHtmlString(items.First(x=>x.Guid == guid).Text);
+            var mvcString = new MvcHtmlString(items.First(x => x.Guid == guid).Text);
             return mvcString;
         }
+
         public static MvcHtmlString RenderText(this HtmlHelper helper)
         {
             var path = GetPathToResource(helper.ViewContext);

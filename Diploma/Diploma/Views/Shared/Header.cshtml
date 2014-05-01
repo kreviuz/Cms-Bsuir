@@ -1,6 +1,35 @@
-﻿<h1>Бгуир</h1>
-<div>Информация</div>
-@{
-    Html.RenderAction("Index", "Menu");
-}
-
+﻿@using Diploma.HtmlHelpers
+<table class="header">
+    <tbody>
+        <tr>
+            <td rowspan="3" class="header-left"><img src="@Url.Content("~/Content/Media/Images/logo_left.png")"></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="header-top">
+                <div>
+                    <h1>
+                        электронный
+                        учебно-методический комплекс по дисциплине
+                    </h1>
+                    <h1>
+                        "ВЫСШАЯ МАТЕМАТИКА"
+                    </h1>
+                    <h1>
+                        для специальностей:
+                    </h1>
+                    <div>40.01.01 «Программное обеспечение информационных технологий»,</div>
+                    <div>31.03.04 «Информатика».</div>
+                </div>
+            </td>
+            <td rowspan="3" class="header-right">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="text-center">
+                <div class="menu-top">
+                    @Html.MenuLink("Оглавление", "Index", "Home") | @Html.MenuLink("Программа", "Index", "Home") | @Html.MenuLink("Практика", "Index", "Home") | @Html.MenuLink("Контроль знаний", "Index", "Home")| @Html.MenuLink("Об авторах", "Index", "Home")
+                </div>
+            </td>
+        </tr>
+        <tr></tr>
+    </tbody>
+</table>

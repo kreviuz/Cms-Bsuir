@@ -8,7 +8,6 @@ namespace Diploma.Controllers
 {
     public class MenuController : Controller
     {
-        [ChildActionOnly]
         public PartialViewResult Index()
         {
             var result = PartialView();
