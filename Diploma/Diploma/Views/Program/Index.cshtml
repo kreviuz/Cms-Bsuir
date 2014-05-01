@@ -1,0 +1,27 @@
+﻿<script src="@Url.Content("~/Scripts/modules/editor_module.js")"></script>
+@using Diploma
+@using Diploma.HtmlHelpers
+@{
+    Layout = "~/Views/Shared/_BaseLayout.cshtml";
+}
+
+@{
+    var settings = new
+    {
+        Selectors = new
+        {
+            Editor = String.Format(Constants.UiElements.IdSelector, Constants.UiElements.Id.Editor),
+            ButtonRedact = String.Format(Constants.UiElements.IdSelector, Constants.UiElements.Id.ButtonRedact),
+            ButtonSave = String.Format(Constants.UiElements.IdSelector, Constants.UiElements.Id.ButtonSave)
+        },
+        UrlPostData = Url.Action("UrlPostData"),
+        Path = ((RazorView)Html.ViewContext.View).ViewPath.Replace(Constants.Resources.ViewsPathPart, Constants.Resources.ResourcesPathPart)
+        .Replace(Constants.Resources.CshtmlPathPart, Constants.Resources.XmlPathPart)
+    };
+}
+
+<div id="@Constants.UiElements.Id.Editor">@Html.RenderText()</div>
+<button id="@Constants.UiElements.Id.ButtonRedact">Редактировать</button>
+<button id="@Constants.UiElements.Id.ButtonSave" hidden="hidden">Сохранить</button>
+
+@Html.InitModule("window.root.EditorModule", settings)

@@ -7,20 +7,11 @@ using Diploma.Models;
 
 namespace Diploma.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public ActionResult Index()
         {
             return View();
         }
-
-		[HttpPost]
-		public void UrlPostData(string data, string path)
-		{
-			var items = DtoHelper.ToTextItemModel(path);
-			var textItemModels = items as TextItemModel[] ?? items.ToArray();
-			textItemModels.First().Text = data;
-			DtoHelper.SerealizeModel(textItemModels, path);
-		}
     }
 }

@@ -136,8 +136,9 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="Constants.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\MenuController.cs" />
+    <Compile Include="Controllers\ProgramController.cs" />
     <Compile Include="DataHelpers\TextResourcesHelper.cs" />
     <Compile Include="DTO\Text\TextResources\Shared.designer.cs" />
     <Compile Include="Global.asax.cs">
@@ -154,7 +155,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Content Include="App_Data\Resources\Home\Index.xml">
+    <Content Include="App_Data\Resources\Program\Index.xml">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Content\Media\Images\2.jpg">
@@ -217,9 +218,9 @@
     <Content Include="Content\Media\Images\theory_gray.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\Style\menu_style.css" />
     <Content Include="Content\redactor\redactor-iframe.css" />
     <Content Include="Content\redactor\redactor.css" />
+    <Content Include="Content\Style\menu_style.css" />
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -236,10 +237,12 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Views\Program\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Home\App_LocalResources\" />
     <Folder Include="Views\Menu\App_LocalResources\" />
+    <Folder Include="Views\Program\App_LocalResources\" />
     <Folder Include="Views\Shared\App_LocalResources\" />
   </ItemGroup>
   <ItemGroup>

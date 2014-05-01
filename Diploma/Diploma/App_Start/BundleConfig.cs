@@ -12,7 +12,9 @@ namespace Diploma.App_Start
         private static void RegisterScripts(BundleCollection bundles)
         {
             var jqueryBundle = new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js");
+                        "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/redactor/redactor.js",
+                        "~/Scripts/modules/editor_module.js");
             bundles.Add(jqueryBundle);
         }
         private static void RegisterStyles(BundleCollection bundles)

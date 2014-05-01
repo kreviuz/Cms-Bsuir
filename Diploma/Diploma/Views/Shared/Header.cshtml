@@ -25,9 +25,9 @@
         </tr>
         <tr>
             <td colspan="2" class="text-center">
-                <div class="menu-top">
-                    @Html.MenuLink("Оглавление", "Index", "Home") | @Html.MenuLink("Программа", "Index", "Home") | @Html.MenuLink("Практика", "Index", "Home") | @Html.MenuLink("Контроль знаний", "Index", "Home")| @Html.MenuLink("Об авторах", "Index", "Home")
-                </div>
+                @{
+                    Html.RenderPartial("~/Views/Menu/Index.cshtml");
+                }
             </td>
         </tr>
         <tr></tr>

@@ -14,6 +14,7 @@
                 public const string MainContent = "main-content";
                 public const string Editor = "editor";
                 public const string ButtonRedact = "button-redact";
+                public const string ButtonSave = "button-save";
             }
         }
         public static class Resources
