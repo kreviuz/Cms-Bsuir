@@ -157,13 +157,23 @@
     <Content Include="App_Data\Resources\Home\Index.xml">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Content\Media\Images\2.jpg" />
+    <Content Include="Content\Media\Images\3.jpg" />
+    <Content Include="Content\Media\Images\4.jpg" />
     <Content Include="Content\Media\Images\background.jpg" />
+    <Content Include="Content\Media\Images\bsuir.png" />
+    <Content Include="Content\Media\Images\bsuir1.png" />
+    <Content Include="Content\Media\Images\logo-large.jpg" />
+    <Content Include="Content\Media\Images\logo-medium.jpg" />
+    <Content Include="Content\Media\Images\logo-small.jpg" />
+    <Content Include="Content\Media\Images\logo2008.jpg" />
     <Content Include="Content\Media\Images\logo_left.png" />
     <Content Include="Content\Media\Images\practice.jpg" />
     <Content Include="Content\Media\Images\practice_gray.jpg" />
     <Content Include="Content\Media\Images\program.jpg" />
     <Content Include="Content\Media\Images\program_gray.jpg" />
     <Content Include="Content\Media\Images\question.jpg" />
+    <Content Include="Content\Media\Images\questionmark.jpg" />
     <Content Include="Content\Media\Images\question_gray.jpg" />
     <Content Include="Content\Media\Images\theory.jpg" />
     <Content Include="Content\Media\Images\theory_gray.jpg" />
