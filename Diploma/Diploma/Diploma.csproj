@@ -141,6 +141,7 @@
     <Compile Include="Controllers\ProgramController.cs" />
     <Compile Include="DataHelpers\TextResourcesHelper.cs" />
     <Compile Include="DTO\Text\TextResources\Shared.designer.cs" />
+    <Compile Include="Extensions\ResourceExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
