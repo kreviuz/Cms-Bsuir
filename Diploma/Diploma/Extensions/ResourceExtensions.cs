@@ -6,7 +6,7 @@ namespace Diploma.Extensions
 	{
 		public static string GetLocalResources(this WebViewPage page, string key)
 		{
-			return page.ViewContext.
+			return (string) page.ViewContext.HttpContext.GetLocalResourceObject(page.VirtualPath, key);
 		}
 	}
 }
