@@ -4,26 +4,27 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    @Scripts.Render("~/bundles/jquery")
-    @Styles.Render("~/bundles/css/main")
-    <title>@ViewBag.Title</title>
+	<meta name="viewport" content="width=device-width" />
+	@Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/bundles/ckeditor")
+	@Styles.Render("~/bundles/css/main")
+	<title>@ViewBag.Title</title>
 </head>
 <body>
-    @{
-        Html.RenderPartial("Header");
-    }
-    <table class="table-menu-index">
-        <tbody>
-            <tr>
-                <td>
-                    @RenderBody()
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    @{
-        Html.RenderPartial("Footer");
-    }
+	@{
+		Html.RenderPartial("Header");
+	}
+	<table class="table-menu-index">
+		<tbody>
+			<tr>
+				<td>
+					@RenderBody()
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	@{
+		Html.RenderPartial("Footer");
+	}
 </body>
 </html>

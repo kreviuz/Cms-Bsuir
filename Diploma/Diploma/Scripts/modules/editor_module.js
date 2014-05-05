@@ -9,7 +9,7 @@
             },
             initEditor: function () {
                 var self = this;
-                $(self.settings.Selectors.Editor).redactor();
+                $(self.settings.Selectors.Editor).ckeditor();
             },
             initClick: function () {
                 var self = this;
