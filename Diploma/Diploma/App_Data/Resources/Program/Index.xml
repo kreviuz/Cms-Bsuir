@@ -1,4 +1,7 @@
 <?xml version="1.0"?>
 <Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Item data-guid="09EDDFBB-A886-4B9C-9744-973457B504C7">&lt;p&gt;ytryrtyrtyrt&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;/strong&gt;&lt;/p&gt;</Item>
+  <Item data-guid="09EDDFBB-A886-4B9C-9744-973457B504C7">&lt;p&gt;&lt;strong&gt;&amp;lt;​script type=&amp;quot;text/jasvascript&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;rtrter&lt;/p&gt;
+</Item>
 </Root>
