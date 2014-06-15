@@ -23,6 +23,8 @@
             public const string ResourcesPathPart = "App_Data/Resources";
             public const string CshtmlPathPart = ".cshtml";
             public const string XmlPathPart = ".xml";
+            public const string DownloadName = "Pages.zip";
+            public const string DownloadParameter = "?isDownload=true";
         }
     }
 }

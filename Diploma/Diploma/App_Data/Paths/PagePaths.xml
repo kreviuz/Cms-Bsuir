@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<List xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Path controller="Home" action="Index" filename="Menu.html"></Path>
+  <Path controller="Program" action="Index" filename="Program.html"></Path>
+  <Path controller="Practice" action="Index" filename="Practice.html"></Path>
+  <Path controller="Knowledge" action="Index" filename="Knowledge.html"></Path>
+  <Path controller="Authors" action="Index" filename="Authors.html"></Path>
+</List>

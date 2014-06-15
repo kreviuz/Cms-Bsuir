@@ -5,35 +5,35 @@
 }
 
 .img-menu-program {
-    background-image: url('/Content/Media/Images/program_gray.jpg');
+    background-image: url('../Media/Images/program_gray.jpg');
 }
 
     .img-menu-program:hover {
-        background-image: url('/Content/Media/Images/program.jpg');
+        background-image: url('../Media/Images/program.jpg');
     }
 
 .img-menu-practice {
-    background-image: url('/Content/Media/Images/practice_gray.jpg');
+    background-image: url('../Media/Images/practice_gray.jpg');
 }
 
     .img-menu-practice:hover {
-        background-image: url('/Content/Media/Images/practice.jpg');
+        background-image: url('../Media/Images/practice.jpg');
     }
 
 .img-menu-theory {
-    background-image: url('/Content/Media/Images/theory_gray.jpg');
+    background-image: url('../Media/Images/theory_gray.jpg');
 }
 
     .img-menu-theory:hover {
-        background-image: url('/Content/Media/Images/theory.jpg');
+        background-image: url('../Media/Images/theory.jpg');
     }
 
 .img-menu-question {
-    background-image: url('/Content/Media/Images/question_gray.jpg');
+    background-image: url('../Media/Images/question_gray.jpg');
 }
 
     .img-menu-question:hover {
-        background-image: url('/Content/Media/Images/question.jpg');
+        background-image: url('../Media/Images/question.jpg');
     }
 
 .table-menu-index {

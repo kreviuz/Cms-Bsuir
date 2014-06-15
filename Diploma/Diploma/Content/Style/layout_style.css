@@ -195,7 +195,7 @@ a {
 }
 
 .header {
-    background-image: url('/Content/Media/Images/background.jpg');
+    background-image: url('../Media/Images/background.jpg');
     width: 100%;
 }
 
@@ -203,7 +203,7 @@ a {
     width: 100%;
     height: 25px;
     border-color: #316AC5;
-    background-image: url('/Content/Media/Images/background.jpg');
+    background-image: url('../Media/Images/background.jpg');
     text-align: center;
 }
 

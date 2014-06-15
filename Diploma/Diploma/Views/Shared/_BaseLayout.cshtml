@@ -1,30 +1,47 @@
 ﻿@using System.Web.Optimization
+@{
+    var isDownload = Request.Params["isDownload"];
+    if (isDownload == bool.FalseString || string.IsNullOrEmpty(isDownload))
+    {
+        isDownload = bool.FalseString;
+    }
+}
 
 <!DOCTYPE html>
 
 <html>
 <head>
-	<meta name="viewport" content="width=device-width" />
-	@Scripts.Render("~/bundles/jquery")
-	@Scripts.Render("~/bundles/ckeditor")
-	@Styles.Render("~/bundles/css/main")
-	<title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width" />
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/ckeditor")
+    @Styles.Render("~/bundles/css/main")
+    <title>@ViewBag.Title</title>
 </head>
 <body>
-	@{
-		Html.RenderPartial("Header");
-	}
-	<table class="table-menu-index">
-		<tbody>
-			<tr>
-				<td>
-					@RenderBody()
-				</td>
-			</tr>
-		</tbody>
-	</table>
-	@{
-		Html.RenderPartial("Footer");
-	}
+    @{
+        Html.RenderPartial("Header");
+    }
+    <table class="table-menu-index">
+        <tbody>
+            <tr>
+                @{
+                    if (isDownload == bool.FalseString)
+                    {
+                        <td>
+                            <a href="@Url.Action("GetPages", "Download")">Скачать ЭУМКД</a>
+                        </td>
+                    }
+                }
+            </tr>
+            <tr>
+                <td>
+                    @RenderBody()
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    @{
+        Html.RenderPartial("Footer");
+    }
 </body>
 </html>
