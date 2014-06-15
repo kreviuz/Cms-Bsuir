@@ -12,7 +12,7 @@ namespace Diploma.Controllers
         public JsonResult GetPage()
         {
             var paths = DtoHelper.GetPaths();
-            var urls = paths.Select(x => Request.Url != null ? Url.Action(x.Action, x.Controller, null, Request.Url.Scheme) : null);
+            var urls = paths.Select(x => Request.Url != null ? string.Format("{0}://{1}{2}", Request.Url.Scheme, Request.Url.Authority, Url.Action(x.Action, x.Controller)) : null);
             return Json(urls, JsonRequestBehavior.AllowGet);
         }
         public FileResult GetPages()
