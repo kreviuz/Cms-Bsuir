@@ -12,9 +12,15 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/ckeditor")
-    @Styles.Render("~/bundles/css/main")
+    @Scripts.Render("~/Scripts/jquery-1.9.1.js")
+    @Scripts.Render("~/Scripts/ckeditor/ckeditor.js")
+    @Scripts.Render("~/Scripts/ckeditor/adapters/jquery.js")
+    @Scripts.Render("~/Modules/ckfinder/ckfinder.js")
+    @Scripts.Render("~/Modules/ckfinder/config.js")
+    @Scripts.Render("~/Scripts/modules/editor_module.js")
+    @Styles.Render("~/Content/Style/layout_style.css")
+    @Styles.Render("~/Content/Style/menu_style.css")
+    @Styles.Render("~/Content/redactor/redactor.css")
     <title>@ViewBag.Title</title>
 </head>
 <body>
