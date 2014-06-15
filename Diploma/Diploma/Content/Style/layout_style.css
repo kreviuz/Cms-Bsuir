@@ -195,7 +195,7 @@ a {
 }
 
 .header {
-    background-image: url('../Media/Images/background.jpg');
+    background-image: url('/Content/Media/Images/background.jpg');
     width: 100%;
 }
 
