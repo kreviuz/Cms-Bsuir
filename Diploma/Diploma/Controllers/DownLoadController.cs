@@ -9,12 +9,6 @@ namespace Diploma.Controllers
 {
     public class DownloadController : BaseController
     {
-        public JsonResult GetPage()
-        {
-            var paths = DtoHelper.GetPaths();
-            var urls = paths.Select(x => Request.Url != null ? string.Format("{0}://{1}{2}", Request.Url.Scheme, Request.Url.Authority, Url.Action(x.Action, x.Controller)) : null);
-            return Json(urls, JsonRequestBehavior.AllowGet);
-        }
         public FileResult GetPages()
         {
             if (Request.Url != null)
