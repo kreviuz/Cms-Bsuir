@@ -14,6 +14,8 @@ namespace Diploma.App_Start
 			var jqueryBundle = new ScriptBundle("~/bundles/jquery").Include(
 						"~/Scripts/jquery-{version}.js",
 						"~/Scripts/modules/editor_module.js",
+                        "~/Modules/ckfinder/ckfinder.js",
+                        "~/Modules/ckfinder/config.js",
 						"~/Scripts/ckeditor/ckeditor.js"
 						);
 			var editorBundle = new ScriptBundle("~/bundles/ckeditor").Include(

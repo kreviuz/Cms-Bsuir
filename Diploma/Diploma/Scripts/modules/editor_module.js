@@ -15,6 +15,7 @@
                 var content = editor.html();
                 editor.html("<textarea />");
                 var ckEditor = editor.find("textarea:first").ckeditor({ language: 'ru' }).editor;
+                CKFinder.setupCKEditor(ckEditor, '/Modules/ckfinder/');
                 ckEditor.setData(content);
                 self.settingsInstance.ckEditor = ckEditor;
             },
