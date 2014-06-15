@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Linq;
 using System.Net;
 using System.Web.Mvc;
 using Diploma.DataHelpers;
@@ -8,6 +9,12 @@ namespace Diploma.Controllers
 {
     public class DownloadController : BaseController
     {
+        public JsonResult GetPage()
+        {
+            var paths = DtoHelper.GetPaths();
+            var urls = paths.Select(x => Request.Url != null ? Url.Action(x.Action, x.Controller, null, Request.Url.Scheme) : null);
+            return Json(urls, JsonRequestBehavior.AllowGet);
+        }
         public FileResult GetPages()
         {
             if (Request.Url != null)

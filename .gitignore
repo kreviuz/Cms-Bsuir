@@ -213,3 +213,5 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+Diploma/packages/WebGrease.1.5.2/tools/install.ps1
+Diploma/packages/WebGrease.1.5.2/tools/uninstall.ps1
