@@ -6,6 +6,7 @@ namespace Diploma.App_Start
 	{
 		public static void RegisterBundles(BundleCollection bundles)
 		{
+            BundleTable.EnableOptimizations = false;
 			RegisterScripts(bundles);
 			RegisterStyles(bundles);
 		}
