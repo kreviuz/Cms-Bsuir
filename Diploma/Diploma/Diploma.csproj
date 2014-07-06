@@ -163,6 +163,7 @@
     <Compile Include="Controllers\DownloadController.cs" />
     <Compile Include="DataHelpers\ResourcesHelper.cs" />
     <Compile Include="DTO\Paths\PagePaths.designer.cs" />
+    <Compile Include="DTO\Text\TextResources\OrderedShared.designer.cs" />
     <Compile Include="DTO\Text\TextResources\Shared.designer.cs" />
     <Compile Include="Extensions\ResourceExtensions.cs" />
     <Compile Include="Global.asax.cs">
@@ -850,6 +851,9 @@
     <Content Include="Modules\ckfinder\plugins\fileeditor\codemirror\LICENSE" />
     <Content Include="Modules\ckfinder\userfiles\.htaccess" />
     <None Include="DTO\Paths\PagePaths.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DTO\Text\TextResources\OrderedShared.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />

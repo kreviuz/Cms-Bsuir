@@ -1,9 +1,5 @@
 <?xml version="1.0"?>
 <Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Item data-guid="09EDDFBB-A886-4B9C-9744-973457B504C7">&lt;p&gt;&lt;strong&gt;&lt;img alt="" src="/Content/Media/Shared/images/Weather-Icon.png" style="height:256px; width:256px" /&gt;Макковейский Д.А. Тест&lt;/strong&gt;dfgdfgf&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;ol&gt;
-&lt;/ol&gt;
-</Item>
+  <Item data-guid="09EDDFBB-A886-4B9C-9744-973457B504C7" order="1">dgdgd</Item>
+  <Item data-guid="09EDDFBB-A886-4B9C-9744-973457B504C7" order="2">dfgdfgfd</Item>
 </Root>
